@@ -16,8 +16,10 @@ body {
   nav {
     background-color: #d9c1a3;
     padding: 1em;
+
     display: flex;
     justify-content: center;
+
   }
   
   nav a {
