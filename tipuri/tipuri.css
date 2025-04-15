@@ -25,7 +25,18 @@ li > p {
     justify-content: center;
     align-items: center;
     padding: 10px;
+
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }
+
+li > p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
 h2 {
     text-align: center;
     color: rgb(231, 201, 164);
