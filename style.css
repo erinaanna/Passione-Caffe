@@ -1,44 +1,43 @@
 :root {
   font-size: 16px;
-  --bg-color: #f3f0ec;
-  --primary: #4e342e;
-  --secondary: #bfa084;
-  --accent: #8d6e63;
-  --text-dark: #241c18;
+  --primary-color: #6b4f3b;
+  --secondary-color: #d9c1a3;
+  --accent-color: #a1887f;
+  --bg-light: #f5f5f5;
+  --text-color: #333;
 }
 
-html, body {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-dark);
+  background-color: var(--bg-light);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 2em 1em;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav {
-  background-color: var(--secondary);
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   padding: 1em;
   flex-wrap: wrap;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--text-color);
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 8px;
@@ -46,47 +45,52 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--accent);
+  background-color: var(--accent-color);
   color: white;
   transform: scale(1.05);
 }
 
 main {
   flex: 1;
+  padding: 40px 20px;
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
 }
 
-.caseta-poveste {
-  background-color: #3e2f29;
-  color: #fff;
-  padding: 30px;
-  border-radius: 12px;
+#retete {
   max-width: 800px;
   width: 100%;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.caseta-poveste h2 {
-  color: #ffe6d5;
-  border-bottom: 2px solid #bfa084;
-  padding-bottom: 10px;
+#retete h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.caseta-reteta {
+  background-color: white;
+  border-left: 6px solid var(--primary-color);
   margin-bottom: 20px;
-  font-size: 2rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.caseta-poveste p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 1.5em;
+.caseta-reteta h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.caseta-reteta p {
   text-align: justify;
 }
 
 footer {
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
-  padding: 1.5em 1em;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
