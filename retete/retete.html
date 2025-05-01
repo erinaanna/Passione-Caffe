@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Retete - Passione Caffe</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-pzjw8f+ua7Kw1TIq0dp5pS3u3X7zI1A7gd6md0m9tqdtL4vDpmwI03vfrDTW8Kp7" crossorigin="anonymous">
 </head>
+
 <body>
+
   <header>
-    <h1>Passione Caffe - Retete</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Passione Caffe</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Acasa <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../poveste/poveste.html">Povestea cafenelei</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../tipuri/tipuri.html">Tipuri de cafea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Retete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <nav>
-    <a href="../index.html">Acasa</a>
-    <a href="../poveste/poveste.html">Povestea cafenelei</a>
-    <a href="../tipuri/tipuri.html">Tipuri de cafea</a>
-    <a>Retete</a>
-    <a href="../contact/contact.html">Contact</a>
-  </nav>
+  <section id="retete" class="container mt-4">
+    <h2 class="text-center">Rețete cu cafea</h2>
 
-  <main>
-    <section id="retete" class="caseta-retete">
-      <h2>Rețete cu cafea</h2>
-      <div class="reteta">
-        <img src="https://images.pexels.com/photos/3759083/pexels-photo-3759083.jpeg" alt="Cafea clasică" />
-        <h3>Cafea clasică</h3>
-        <p>Preparată cu espresso sau filtru, ideală pentru un început de zi perfect.</p>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/3759083/pexels-photo-3759083.jpeg" class="card-img-top" alt="Cafea clasică">
+          <div class="card-body">
+            <h5 class="card-title">Cafea clasică</h5>
+            <p class="card-text">Preparată cu espresso sau filtru, ideală pentru un început de zi perfect.</p>
+          </div>
+        </div>
       </div>
-      <div class="reteta">
-        <img src="https://images.pexels.com/photos/3764646/pexels-photo-3764646.jpeg" alt="Cafea cu arome" />
-        <h3>Cafea cu arome</h3>
-        <p>Adăugați arome de vanilie, caramel sau ciocolată pentru o băutură mai dulce.</p>
-      </div>
-      <div class="reteta">
-        <img src="https://images.pexels.com/photos/1732410/pexels-photo-1732410.jpeg" alt="Deserturi cu cafea" />
-        <h3>Deserturi cu cafea</h3>
-        <p>Prepară un tiramisu delicios sau un cheesecake cu cafea pentru o combinație perfectă.</p>
-      </div>
-      <div class="reteta">
-        <img src="https://images.pexels.com/photos/1443589/pexels-photo-1443589.jpeg" alt="Băuturi reci pe bază de cafea" />
-        <h3>Băuturi reci pe bază de cafea</h3>
-        <p>Cold brew cu lapte sau cafea frappé pentru zilele călduroase de vară.</p>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Passione Caffe</p>
-  </footer>
-</body>
-</html>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/3764646/pexels-photo-3764646.jpeg" class="card-img-top" alt="Cafea cu arome">
+          <div class="card-body">
+            <h5 class="card-title">Cafea cu arome</h5>
+            <p class="card-text">Adăugați arome de vanilie, caramel sau ciocolată pentru o băutură mai dulce.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1732410/pexels-photo-1732410.jpeg" class="card-img-top" alt="Deserturi cu cafea">
+          <div class="card-body">
+            <h5 class="card-title">Deserturi cu cafea</h5>
+            <p class="card-text">Prepară un tiramisu delicios sau
